@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
-  <title>YouTube 播放器!</title>
+  <title>YouTube Player Desktop</title>
   <link rel="stylesheet" href="./mdui/css/mdui.css">
 </head>
-
-<body class="mdui-theme-layout-auto mdui-color-theme-500 mdui-drawer-body-left">
-  <div class="mdui-appbar">
-    <div class="mdui-toolbar mdui-color-theme">
-      <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i class="mdui-icon material-icons">menu</i></button>
+<body class="mdui-theme-layout-dark mdui-color-theme-500 mdui-drawer-body-left">
+  <div class="mdui-appbar mdui-color-blue-600">
+    <div class="mdui-toolbar">
       <div class="mdui-typo-headline">Youtube 播放器</div>
     </div>
   </div>
-  <div class="mdui-drawer" id="drawer">
-    <p>lol</p>
+  <div class="controlBar mdui-color-white mdui-center mdui-text-center">
+    <button class="mdui-btn mdui-btn-icon mdui-ripple">
+      <i class="mdui-icon material-icons mdui-typo-display-1">&#xe034;</i>
+    </button>
+    <button class="mdui-btn mdui-btn-icon mdui-ripple">
+      <i class="mdui-icon material-icons mdui-typo-display-1">&#xe037;</i>
+    </button>
+    
   </div>
+  <style>
+    .controlBar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 13px 13px 0 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  </style>
   <script src="./mdui/js/mdui.js"></script>
 </body>
-
 </html>
